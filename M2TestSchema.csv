@@ -1,0 +1,19 @@
+Table Name, Column Name, Column Type, Key, Indexed, References
+GameGenre,NumberOfGames,Integer,False,False,False
+GameGenre,GameGenre,String,True,True,False
+Gamers,BirthDate,Date,False,False,False
+Gamers,ID,Integer,True,True,False
+Gamers,FirstName,String,False,False,False
+Gamers,LastName,String,False,False,False
+Gamers,Country,String,False,False,False
+Gamers,GameGenre_GameGenre,String,False,False,True
+Games,Genre_GameGenre,String,False,False,True
+Games,Name,String,False,False,False
+Games,SerialNo,Integer,True,True,False
+Characters,Game_GameName,String,False,False,True
+Characters,CharacterName,String,True,True,False
+Characters,Ability,String,False,False,False
+Consoles,Released,Boolean,False,False,False
+Consoles,ConsoleName,String,True,True,False
+Consoles,ReleaseDate,Date,False,False,False
+Consoles,ManufacturerName,String,False,False,False
